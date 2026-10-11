@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Baloo 2', 'Nunito Sans', sans-serif;
+  --color-primary: oklch(33% 0.062 158);
+  --color-primary-foreground: oklch(98.5% 0.01 95);
+  --color-secondary: oklch(94.5% 0.026 118);
+  --color-secondary-foreground: oklch(33% 0.062 158);
+  --color-background: oklch(97.8% 0.014 92);
+  --color-foreground: oklch(26% 0.045 155);
+  --color-card: oklch(99.5% 0.006 95);
+  --color-card-foreground: oklch(26% 0.045 155);
+  --color-muted: oklch(95% 0.017 96);
+  --color-muted-foreground: oklch(49% 0.028 152);
+  --color-accent: oklch(71% 0.169 51);
+  --color-accent-foreground: oklch(99% 0.008 95);
+  --color-destructive: oklch(58% 0.2 25);
+  --color-destructive-foreground: oklch(98.5% 0.01 95);
+  --color-border: oklch(89.8% 0.024 110);
+  --color-input: oklch(89.8% 0.024 110);
+  --color-ring: oklch(33% 0.062 158);
+  --color-mint: oklch(93% 0.045 158);
+  --color-mint-foreground: oklch(33% 0.062 158);
+  --color-blush: oklch(92% 0.045 8);
+  --color-blush-foreground: oklch(45% 0.14 12);
+  --color-sky: oklch(93% 0.04 235);
+  --color-sky-foreground: oklch(40% 0.09 245);
+  --color-sand: oklch(94% 0.05 78);
+  --color-sand-foreground: oklch(46% 0.11 62);
+  --color-lilac: oklch(93% 0.04 300);
+  --color-lilac-foreground: oklch(44% 0.1 300);
+  --shadow-soft: 0 2px 10px -4px oklch(33% 0.062 158 / 0.14);
+  --shadow-lift: 0 18px 40px -22px oklch(33% 0.062 158 / 0.32);
+}
+
+:root {
+  --radius: 1.25rem;
+  --background: oklch(97.8% 0.014 92);
+  --foreground: oklch(26% 0.045 155);
+  --card: oklch(99.5% 0.006 95);
+  --card-foreground: oklch(26% 0.045 155);
+  --primary: oklch(33% 0.062 158);
+  --primary-foreground: oklch(98.5% 0.01 95);
+  --secondary: oklch(94.5% 0.026 118);
+  --secondary-foreground: oklch(33% 0.062 158);
+  --muted: oklch(95% 0.017 96);
+  --muted-foreground: oklch(49% 0.028 152);
+  --accent: oklch(71% 0.169 51);
+  --accent-foreground: oklch(99% 0.008 95);
+  --destructive: oklch(58% 0.2 25);
+  --destructive-foreground: oklch(98.5% 0.01 95);
+  --border: oklch(89.8% 0.024 110);
+  --input: oklch(89.8% 0.024 110);
+  --ring: oklch(33% 0.062 158);
+  --mint: oklch(93% 0.045 158);
+  --mint-foreground: oklch(33% 0.062 158);
+  --blush: oklch(92% 0.045 8);
+  --blush-foreground: oklch(45% 0.14 12);
+  --sky: oklch(93% 0.04 235);
+  --sky-foreground: oklch(40% 0.09 245);
+  --sand: oklch(94% 0.05 78);
+  --sand-foreground: oklch(46% 0.11 62);
+  --lilac: oklch(93% 0.04 300);
+  --lilac-foreground: oklch(44% 0.1 300);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.paw-grid {
+  background-image: radial-gradient(oklch(33% 0.062 158 / 0.08) 1.5px, transparent 1.6px);
+  background-size: 22px 22px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(80% 0.02 110);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(65% 0.03 120);
+}
